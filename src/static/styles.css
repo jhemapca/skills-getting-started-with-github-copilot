@@ -91,9 +91,9 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
-  padding-left: 14px;
+  padding: 0;
   display: block;
   max-height: 160px;
   overflow: auto;
@@ -108,6 +108,25 @@ section h3 {
   font-size: 0.95rem;
   color: #444;
   word-break: break-word;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participants-list li .delete-participant {
+  background: none;
+  border: none;
+  color: #cc0000;
+  font-size: 1.2rem;
+  padding: 0 6px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.participants-list li .delete-participant:hover {
+  opacity: 1;
+  background: none;
 }
 
 .participants-list li.muted {
